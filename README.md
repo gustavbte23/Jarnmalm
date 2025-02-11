@@ -1,1 +1,1 @@
-# J-rnmalm
+En Hemsida Om Mineraler.
