@@ -3,12 +3,16 @@ header{
     width: 100%;
     height: 16.7vw;
     top: 10vw;
+    position: absolute;
 
 }
 
 body{
 height: 150vw;
 font-size: 7rem;
-background-image: url("images/black-white-starry-night.jpg");
+background: url("../images/black-white-starry-night.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
 
 }
