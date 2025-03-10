@@ -9,7 +9,7 @@ header{
 
 body{
 height: 150vw;
-font-size: 7rem;
+font-size: 7vw;
 background: url("../images/black-white-starry-night.jpg");
 background-size: cover;
 background-position: center;
@@ -41,5 +41,4 @@ div{
     grid-template-columns: auto auto auto auto auto;
     Top: 25vw;
     left: 45vw;
-
   }
