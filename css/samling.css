@@ -31,3 +31,15 @@ div{
     justify-content: center;
     align-items: center;
 }
+
+.container {
+    position: absolute;
+    display: grid;
+    column-gap: 11vw;
+    row-gap: 11vw;
+    grid-template-columns: auto auto auto auto auto;
+    Top: 25vw;
+
+    Left: 45vw;
+
+  }
