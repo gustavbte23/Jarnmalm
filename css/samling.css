@@ -4,7 +4,7 @@ header{
     height: 16.7vw;
     top: 10vw;
     position: absolute;
-
+    color: white;
 }
 
 body{
@@ -14,5 +14,20 @@ background: url("../images/black-white-starry-night.jpg");
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
+}
 
+div img {
+    height: 100%;
+    width: 100%;
+  }
+  
+
+div{
+    background-color: black;
+    border: 0.1vw solid #ffffff;
+    width: 9.2vw;
+    height: 9.2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
