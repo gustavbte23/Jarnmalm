@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     images.forEach(image => {
         image.addEventListener("mouseenter", function () {
-            image.style.transform = "scale(1.5)"; // Gör bilden 50% större
+            image.style.transform = "scale(1.2)"; // Gör bilden 50% större
             image.style.transition = "transform 0.3s ease";
         });
 
