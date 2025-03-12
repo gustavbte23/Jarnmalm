@@ -44,5 +44,5 @@ p{
     color: white;
     text-align: center;
     font-size: relative;
-    font-size: calc((2vw + 2vh)/2);
+    font-size: calc(1vw + 1vh);
 }

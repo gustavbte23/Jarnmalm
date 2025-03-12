@@ -37,7 +37,7 @@ div img {
 
 div{
     background-color: black;
-    border: 0.1vw solid #ffffff;
+    border: 0.1px solid #ffffff;
     width: 9.2vw;
     height: 9.2vw;
     display: flex;
