@@ -1,1 +1,54 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0%;
+    margin: 0%;
+    background-image: url('../images/backgrund.jpg');
+    background-size: contain;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+
+header {
+    position: relative;
+    top: 20px;
+    font-size: 90px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.box {
+    width: 400px;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.box h2 {
+    margin-top: -10px;
+    text-align: center;
+    line-height: 100px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    font-size: 30px;
+    letter-spacing: 2.5px;
+}
+
+
+.box p {
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: white;
+    margin-top: -50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 
