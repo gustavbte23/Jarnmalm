@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     mineralDivs.forEach(div => {
         const img = div.querySelector('img');
-        const text = div.querySelector('p');
+        const text = div.querySelector('header');
 
         // Hide the text initially
         text.style.display = 'none';

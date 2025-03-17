@@ -72,7 +72,7 @@ div.expanded img {
     width: 50%;
     height: auto;
 }
-div p {
+div header {
   position: absolute;
   top: 0;
   left: 50%;
@@ -81,13 +81,12 @@ div p {
   font-size: 0.5vw;
   color: white;
   text-align: center;
-  background: rgba(0, 0, 0, 0.7);
   padding: 0.3vw 1vw;
   border-radius: 10px;
 }
 
 /* Optional: Slightly larger and more visible when expanded */
-div.expanded p {
+div.expanded header {
   font-size: 1vw;
   padding: 0.5vw 1.5vw;
 }
