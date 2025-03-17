@@ -66,6 +66,7 @@ main {
     align-items: center;
     justify-content: center;
     position: relative;
+    pointer-events: none;
   }
 
   div.expanded.right-edge {
