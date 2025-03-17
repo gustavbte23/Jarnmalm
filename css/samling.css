@@ -76,6 +76,7 @@ main {
   div.expanded img {
       width: 50%;
       height: auto;
+      pointer-events: auto;
   }
   div header {
     position: absolute;
