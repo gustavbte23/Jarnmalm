@@ -66,30 +66,50 @@ main {
     align-items: center;
     justify-content: center;
     position: relative;
-}
+  }
 
-div.expanded img {
-    width: 50%;
-    height: auto;
-}
-div header {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  margin: 0;
-  font-size: 0.5vw;
-  color: white;
-  text-align: center;
-  padding: 0.3vw 1vw;
-  border-radius: 10px;
-}
+  div.expanded.right-edge {
+    transform-origin: right center;
+  }
 
-/* Optional: Slightly larger and more visible when expanded */
-div.expanded header {
-  font-size: 1vw;
-  padding: 0.5vw 1.5vw;
-}
+  div.expanded img {
+      width: 50%;
+      height: auto;
+  }
+  div header {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    font-size: 0.5vw;
+    color: white;
+    text-align: center;
+    padding: 0.3vw 1vw;
+    border-radius: 10px;
+  }
+
+  div.expanded header {
+    font-size: 1vw;
+    padding: 0.5vw 1.5vw;
+  }
+
+  div p {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    font-size: 0.2vw;
+    color: white;
+    text-align: center;
+    width: 100%;
+  }
+
+  div.expanded p {
+    font-size: 0.5vw;
+    padding: 0.5vw 1.5vw;
+  }
   
   @media screen and (max-width:700px){
 
