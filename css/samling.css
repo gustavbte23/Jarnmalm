@@ -45,12 +45,12 @@ div{
     align-items: center;
 }
 
-.container {
+main {
     position: absolute;
     display: grid;
     column-gap: 11vw;
     row-gap: 11vw;
     grid-template-columns: auto auto auto auto auto;
     Top: 25vw;
-    left: 45vw;
+    left: 5vw;
   }
