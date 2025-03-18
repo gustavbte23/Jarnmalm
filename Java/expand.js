@@ -38,4 +38,27 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Handle layout changes on smaller screens
+    const handleResize = () => {
+        const isSmallScreen = window.matchMedia('(max-width: 700px)').matches;
+
+        // If the screen is smaller than 700px, remove right-edge behavior
+        if (isSmallScreen) {
+            mineralDivs.forEach((div) => {
+                div.classList.remove('right-edge');
+            });
+        } else {
+            // When screen width is larger than 700px, reapply right-edge to the 5th column divs
+            mineralDivs.forEach((div, index) => {
+                const columns = 5;
+                if ((index + 1) % columns === 0) {
+                    div.classList.add('right-edge');
+                }
+            });
+        }
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize();
 });

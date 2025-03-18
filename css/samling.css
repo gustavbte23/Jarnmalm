@@ -130,12 +130,12 @@ main {
     padding: 0.5vw 1.5vw;
   }
   
-  @media screen and (max-width:700px){
+  @media screen and (max-width:700px) {
 
     body {
       background: url("../images/black-white-starry-night.jpg");
       background-repeat: no-repeat;
-      background-attachment: fixed; 
+      background-attachment: fixed;
       background-size: 100% 100%;
     }
 
@@ -151,7 +151,7 @@ main {
       pointer-events: none;
     }
 
-    div{
+    div {
       background-color: black;
       border: 0.1px solid #ffffff;
       width: 30vw;
@@ -159,21 +159,53 @@ main {
       display: flex;
       justify-content: center;
       align-items: center;
+      transition: all 0.3s ease;
     }
 
-    main{
+    div.expanded {
+      width: 40vw;
+      height: 40vw;
+      transform: scale(2);
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      pointer-events: none;
+      grid-column: 1 / span 2;
+      justify-self: center;
+      margin-top: 40px; /* Increased margin to push divs down more */
+      margin-bottom: 30px; /* Added margin-bottom to create space between expanded div and the ones below */
+    }
+
+    div.expanded header {
+      font-size: 4vw;
+      padding: 0.5vw 1.5vw;
+    }
+
+    div.expanded p {
+      font-size: 2vw;
+      padding: 0.5vw 1.5vw;
+    }
+
+    main {
       position: absolute;
       display: grid;
       column-gap: 20vw;
-      row-gap: 10vw;
+      row-gap: 30vw; /* Increased row-gap to space out divs more */
       grid-template-columns: auto auto;
-      Top: 25vw;
+      top: 25vw;
       left: 10vw;
+      grid-auto-rows: minmax(30vw, auto);
+    }
+
+    /* Keep the 5th column divs from shifting to the left */
+    main div.right-edge {
+      grid-column: span 2 !important; /* Force the right-most divs to occupy 2 columns */
     }
 
     #J {
-      grid-column: 1 / span 2; /* Span across both columns */
-      grid-row: 13; /* Placed directly below the 12th row */
-      justify-self: center; /* Center it horizontally */
+      grid-column: 1 / span 2;
+      justify-self: center;
     }
-  }
+}
