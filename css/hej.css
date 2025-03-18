@@ -46,3 +46,19 @@ p{
     font-size: relative;
     font-size: calc(2vw + 2vh);
 }
+
+nav {
+  position: relative;
+  height: 20vw;
+  width: 100%;
+}
+
+nav img {
+  position: sticky;
+  top: clamp(0vw, 0vw, 34.7vw);
+  height: 16vh;
+  object-fit: contain;
+  z-index: 12;
+  margin-left: auto;
+  display: block;
+}
