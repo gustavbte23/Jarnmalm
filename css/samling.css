@@ -43,30 +43,120 @@ div{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: transform 0.5s ease, width 0.5s ease, height 0.5s ease;
+    transform-origin: center center;
 }
 
-.container {
+main {
     position: absolute;
     display: grid;
     column-gap: 11vw;
     row-gap: 11vw;
     grid-template-columns: auto auto auto auto auto;
     Top: 25vw;
-    left: 45vw;
+    left: 5vw;
   }
 
-  nav {
-    position: sticky;
-    top: 0;
-    height: 18vh;
-    width: 100%;
-    background-color: black;
+  div.expanded {
+    width: 9.2vw;
+    height: 9.2vw;
+    transform: scale(2);
     z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    pointer-events: none;
+  }
+
+  div.expanded.right-edge {
+    transform-origin: right center;
+  }
+
+  div.expanded img {
+      width: 50%;
+      height: auto;
+      pointer-events: auto;
+  }
+  div header {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    font-size: 0.5vw;
+    color: white;
+    text-align: center;
+    padding: 0.3vw 1vw;
+    border-radius: 10px;
+  }
+
+  div.expanded header {
+    font-size: 1vw;
+    padding: 0.5vw 1.5vw;
+  }
+
+  div p {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    font-size: 0.2vw;
+    color: white;
+    text-align: center;
+    width: 100%;
+  }
+
+  div.expanded p {
+    font-size: 0.5vw;
+    padding: 0.5vw 1.5vw;
   }
   
-  nav img {
-    height: 100%;
-    object-fit: contain;
-    position: absolute; 
-    right: 0;
+  @media screen and (max-width:700px){
+
+    body {
+      background: url("../images/black-white-starry-night.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+      background-size: 100% 100%;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.55);
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    div{
+      background-color: black;
+      border: 0.1px solid #ffffff;
+      width: 30vw;
+      height: 30vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    main{
+      position: absolute;
+      display: grid;
+      column-gap: 20vw;
+      row-gap: 10vw;
+      grid-template-columns: auto auto;
+      Top: 25vw;
+      left: 10vw;
+    }
+
+    #J {
+      grid-column: 1 / span 2; /* Span across both columns */
+      grid-row: 13; /* Placed directly below the 12th row */
+      justify-self: center; /* Center it horizontally */
+    }
   }
