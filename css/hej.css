@@ -48,17 +48,17 @@ p{
 }
 
 nav {
-  position: sticky;
-  top: 0;
-  height: 8vh;
+  position: relative;
+  height: 20vw;
   width: 100%;
-  background-color: black;
-  z-index: 10;
 }
 
 nav img {
-  height: 100%;
+  position: sticky;
+  top: clamp(0vw, 0vw, 34.7vw);
+  height: 16vh;
   object-fit: contain;
-  position: absolute; 
-  right: 0;
+  z-index: 12;
+  margin-left: auto;
+  display: block;
 }
