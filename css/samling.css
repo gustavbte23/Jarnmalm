@@ -7,7 +7,7 @@ nav {
 nav img {
   position: sticky;
   top: clamp(0vw, 0vw, 34.7vw);
-  height: 16vh;
+  height: 10vw;
   object-fit: contain;
   z-index: 12;
   margin-left: auto;
