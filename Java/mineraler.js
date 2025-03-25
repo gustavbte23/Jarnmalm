@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         image.addEventListener("mouseleave", function () {
-            image.style.transform = "scale(1)"; // Återställ storleken
+            image.style.transform = "scale(1)"; // Återställ storleken 
+            });
         });
     });
-});
